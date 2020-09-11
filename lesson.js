@@ -63,4 +63,12 @@ for (let i = 0; i<=100; i++){
   document.querySelector('.progress-bar').style = 'width: '+i+'%'
   }
 }
+
+
+for (let i = 0; i < document.querySelectorAll('.coffee-item').length; i++){
+  document.querySelectorAll('.coffee-item')[i].onclick = function(){
+    console.log(this)
+    makeCoffee('Американо', 25, this.span)
+  }
+}
 */
